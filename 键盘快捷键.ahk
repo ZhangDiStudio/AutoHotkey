@@ -11,22 +11,22 @@ CapsLock & l::send {End}
 ;向下换行
 CapsLock & n::send {End}{Enter}
 ;向上换行
-CapsLock & p::send {Up}{End}{Enter}
+CapsLock & o::send {Up}{End}{Enter}
 
 ;删除一整行
-!d::   ;alt+d
+CapsLock & d::   ;alt+d
 Send {Home}   
 Send +{End}   ;输入shitf键+end键
 Send {delete}{backspace}
 return 
 ;复制一整行
-!y::
+CapsLock & y::
 send {home}
 send +{end}
 send ^c   ;输出ctrl+c,复制一整行
 return
 ;另起一行粘贴内容                                                                   
-!p::                                                                                        
+CapsLock & p::                                                                                        
 send {end}                                                                                  
 send {enter}                                                                                
 send %clipboard%    ;将剪贴板的内容输出                                                  
