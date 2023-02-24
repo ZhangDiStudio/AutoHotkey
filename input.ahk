@@ -18,3 +18,7 @@
     Send "\[        ]\"
     Send "{Left}{Left}{Left}{Left}{Left}{Left}"
 }
+>!t::
+{
+    Send "{BackSpace}{BackSpace}{Down}{Down}{Right}{Right}"
+}
